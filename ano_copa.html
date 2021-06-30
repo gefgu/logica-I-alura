@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<script>
+    
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(texto) {
+        document.write(texto);
+        pulaLinha();
+    }
+
+    var anoLimite = parseInt(prompt("Ano limite de copas:"));
+    var anoCopa = 1930;
+
+    while(anoLimite >= anoCopa) {
+        mostra(anoCopa + " é um ano de copa.");
+        anoCopa = anoCopa + 4;
+    }
+
+    mostra("Fim!")
+
+</script>
